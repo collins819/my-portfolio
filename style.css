@@ -357,13 +357,82 @@ body {
   font-size: 14px;
   color: #555;
 }
-.contact-container {
-  width: 50%;
-  margin: 40px auto;
-  background: rgb(255, 255, 255);
+  .contact-container {
+  max-width: 900px;
+  max-block-size: 100vh;
+  margin: auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: rgb(91, 111, 43);
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background: rgba(75, 212, 77, 0.799);
+}
+/* LABEL */
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  height: 140px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  resize: none;
+  outline: none;
+
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+
+  background: rgba(255,255,255,0.9);
+  color: black;
+}
+
+/* TEXTAREA FOCUS EFFECT */
+textarea:focus {
+  box-shadow: 0 0 8px cyan;
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  padding: 12px;
+
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+
+  background: blue;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+  background: darkblue;
+  transform: scale(1.02);
 }
 
 form {
@@ -546,65 +615,87 @@ html {
 .read-more:hover {
   background: darkblue;
 }
-.about-details {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 30px;
-  background: rgba(0,0,0,0.7);
-  color: white;
-  border-radius: 10px;
-}
 .about-details h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  color: rgb(98, 180, 136);
   font-size: 36px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+   Geneva, Verdana, sans-serif;
 }
 
 .about-details h2 {
   color: yellow;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.about-details p {
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
 .about-details {
   position: center;
-  min-height: 100vh;
+  min-height: 400vh;
   padding: 80px 20px 40px;
-
+-webkit-margin-top-collapse: 20px;
+margin-bottom: 20px;
   background: url("images/fg.jpg.jpg") center/cover no-repeat;
-  background-attachment: upscroll;
-  text-transform: uppercase;
+  background-attachment: fixed;
+  text-transform: capitalize;
 
+  color: rgba(230, 227, 226, 0.851);
+  backdrop-filter: blur(5px); 
+
+}
+.social-contact {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.social-contact h2 {
+  margin-bottom: 10px;
+  margin-top: 70px;
+  color: rgba(255, 64, 0, 0.7);
+}
+
+.contact-item {
+  display: flex;
+  align-items: left;
+  gap: 3px;
+  margin-bottom: 12px;
+  padding: 10px;
+  background: #00b8c5e2;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  background: rgba(9, 9, 209, 0.2);
+  transform: translateX(5px);
+}
+
+.contact-item span {
+  font-size: 10px;
+  margin-block: inherit;
+  padding: auto;
+  margin-bottom: 20px;
+}
+
+.contact-item a {
+  color: rgb(9, 10, 54);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-item a:hover {
+  color: rgb(0, 86, 216);
+  margin-top: 30px;
+}
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
   color: white;
-  box-sizing: border-box;
+  transition: 0.3s;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.about-details {
-  color: white;
-}
-
-.about-details::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-.about-details {
-  position: relative;
-  z-index: 1;
-}
-
-.about-details * {
-  position: relative;
-  z-index: 2;
+.contact-card:hover .icon {
+  transform: scale(1.2);
+  color: yellow;
 }
