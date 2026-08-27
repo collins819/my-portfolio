@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collins — Computer Technology Student &amp; Software Developer</title>
+<meta name="description" content="Portfolio of Collins, a Computer Technology student and software developer building web applications, backend systems, and databases.">
+<meta name="keywords" content="Collins Developer, Computer Technology Student, Software Developer, Web Developer, Java Developer, Python Developer, Backend Developer, Kenya Developer">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Collins — Computer Technology Student & Software Developer">
+<meta property="og:description" content="I build practical software solutions, modern web applications, and technology-driven systems.">
+<meta property="og:image" content="images/bj.8.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background grid layer -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">collins<span class="dot">.</span></a>
+
+    <nav class="nav-tabs" id="navTabs">
+      <a href="#home" class="nav-tab" data-path="~/home">Home</a>
+      <a href="#about" class="nav-tab" data-path="~/about">About</a>
+      <a href="#skills" class="nav-tab" data-path="~/skills">Skills</a>
+      <a href="#projects" class="nav-tab" data-path="~/projects">Projects</a>
+      <a href="#experience" class="nav-tab" data-path="~/experience">Experience</a>
+      <a href="#contact" class="nav-tab" data-path="~/contact">Contact</a>
+    </nav>
+
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navTabs">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/bj.8.png">
+        <source src="videos/vid7.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="terminal-line" id="terminalLine" aria-hidden="true"></p>
+
+        <p class="eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">COLLINS<span class="cursor-blink">_</span></h1>
+        <p class="hero-role">Computer Technology Student &amp; Software Developer</p>
+
+        <p class="hero-statement">
+          I build practical software solutions, modern web applications, and technology-driven
+          systems while continuously exploring the world of software, databases, networking,
+          and computer technology.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <a href="assets/collins-cv.pdf" class="hero-cv" download>
+          <span class="cv-icon" aria-hidden="true">↓</span> Download CV
+        </a>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-ring" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="images/bj.8.png" alt="Portrait of Collins" onerror="this.parentElement.classList.add('portrait-fallback')">
+          <div class="portrait-fallback-mark" aria-hidden="true">C</div>
+        </div>
+        <span class="float-chip chip-1">&lt;/&gt;</span>
+        <span class="float-chip chip-2">{ }</span>
+        <span class="float-chip chip-3">DB</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-path">~/about</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm Collins, a Computer Technology student with a growing focus on software
+            development and the systems that power modern applications. My interest in
+            technology goes beyond writing code — I want to understand how software, databases,
+            networks, and infrastructure fit together to solve real problems.
+          </p>
+          <p>
+            My work spans software development, web development, programming, databases,
+            networking, system development, computer architecture, and the fundamentals of
+            cybersecurity. I approach every project as a chance to learn something new about
+            how technology actually works under the hood.
+          </p>
+          <p>
+            Outside of coursework, I build my own projects — from full-stack platforms to
+            backend systems — because I learn best by shipping working software, not just
+            studying theory.
+          </p>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">01+</span>
+            <span class="stat-label">Years Learning &amp; Building</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects &amp; Experiments</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">08</span>
+            <span class="stat-label">Weeks Industrial Attachment</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity for Technology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section class="section section-alt" id="whatido">
+    <div class="section-inner">
+      <p class="section-path">~/what-i-do</p>
+      <h2 class="section-title">What I Do</h2>
+
+      <div class="do-grid">
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">⌘</span>
+          <h3>Software Development</h3>
+          <p>Building practical software systems using modern programming languages.</p>
+        </div>
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">◱</span>
+          <h3>Web Development</h3>
+          <p>Creating responsive and interactive websites and web applications.</p>
+        </div>
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">⇄</span>
+          <h3>Backend Development</h3>
+          <p>Building APIs, server-side applications, authentication systems, and databases.</p>
+        </div>
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">⛁</span>
+          <h3>Database Development</h3>
+          <p>Designing and working with structured and NoSQL databases.</p>
+        </div>
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">◉</span>
+          <h3>Networking</h3>
+          <p>Learning and implementing computer networking concepts and technologies.</p>
+        </div>
+        <div class="do-card reveal">
+          <span class="do-icon" aria-hidden="true">✦</span>
+          <h3>Technology Exploration</h3>
+          <p>Constantly experimenting with new technologies and development tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-path">~/skills</p>
+      <h2 class="section-title">Technology Stack</h2>
+
+      <div class="stack-grid">
+        <div class="stack-card reveal">
+          <h3>Programming</h3>
+          <div class="badge-row">
+            <span class="badge">Java</span>
+            <span class="badge">Python</span>
+            <span class="badge">C</span>
+            <span class="badge">C++</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </div>
+        <div class="stack-card reveal">
+          <h3>Web Development</h3>
+          <div class="badge-row">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Express.js</span>
+          </div>
+        </div>
+        <div class="stack-card reveal">
+          <h3>Databases</h3>
+          <div class="badge-row">
+            <span class="badge">MongoDB</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+        <div class="stack-card reveal">
+          <h3>Development Tools</h3>
+          <div class="badge-row">
+            <span class="badge">VS Code</span>
+            <span class="badge">Git</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">Postman</span>
+            <span class="badge">Linux</span>
+          </div>
+        </div>
+        <div class="stack-card reveal">
+          <h3>Other Areas</h3>
+          <div class="badge-row">
+            <span class="badge">Networking</span>
+            <span class="badge">APIs</span>
+            <span class="badge">Backend Development</span>
+            <span class="badge">OOP</span>
+            <span class="badge">Database Design</span>
+            <span class="badge">System Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <p class="section-path">~/projects</p>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="filter-row" id="filterRow" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card reveal" data-tags="web backend database">
+          <div class="project-media">
+            <span class="project-media-tag">Full-Stack Platform</span>
+          </div>
+          <div class="project-body">
+            <h3>UniClubs — Student Club Management Platform</h3>
+            <p>A full-stack student club management platform designed to help students discover
+              and interact with university clubs, with authentication, club creation and
+              management, search &amp; filtering, and a REST API backed by MongoDB.</p>
+            <div class="badge-row small">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Express.js</span>
+              <span class="badge">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_USERNAME" class="proj-link">GitHub</a>
+              <a href="#" class="proj-link">Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="java other">
+          <div class="project-media">
+            <span class="project-media-tag">Java System</span>
+          </div>
+          <div class="project-body">
+            <h3>Online Shopping System</h3>
+            <p>An online shopping application built while developing core Java programming
+              and system-design skills — covering product catalogs, cart logic, and order
+              handling within a structured, object-oriented codebase.</p>
+            <div class="badge-row small">
+              <span class="badge">Java</span>
+              <span class="badge">OOP</span>
+              <span class="badge">System Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_USERNAME" class="proj-link">GitHub</a>
+              <a href="#" class="proj-link">Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="database other">
+          <div class="project-media">
+            <span class="project-media-tag">Academic Tool</span>
+          </div>
+          <div class="project-body">
+            <h3>Student Results Checker</h3>
+            <p>A system that allows students to interact with academic results through a
+              simple, reliable software interface — focused on clean data handling and an
+              accessible user experience.</p>
+            <div class="badge-row small">
+              <span class="badge">Database</span>
+              <span class="badge">Backend Logic</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_USERNAME" class="proj-link">GitHub</a>
+              <a href="#" class="proj-link">Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tags="backend other">
+          <div class="project-media">
+            <span class="project-media-tag">Security</span>
+          </div>
+          <div class="project-body">
+            <h3>Login &amp; Authentication System</h3>
+            <p>A secure login system demonstrating authentication concepts, input validation,
+              and user management — built to explore how real-world systems protect user
+              accounts and sessions.</p>
+            <div class="badge-row small">
+              <span class="badge">Authentication</span>
+              <span class="badge">Validation</span>
+              <span class="badge">Security Basics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_USERNAME" class="proj-link">GitHub</a>
+              <a href="#" class="proj-link">Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-path">~/experience</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">29 June 2026 – 21 August 2026</span>
+            <h3>Industrial Attachment — Department of Computer Science</h3>
+            <p>
+              Completed an eight-week industrial attachment within a practical IT environment,
+              gaining hands-on exposure to software development workflows and Java programming.
+              Worked through real programming concepts, system development tasks, and database
+              fundamentals alongside web technologies, while sharpening problem-solving skills
+              in a professional setting.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p class="section-path timeline-spacer">~/education</p>
+      <h2 class="section-title small-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Current</span>
+            <h3>Computer Technology</h3>
+            <p>Multimedia University — undergraduate studies in Computer Technology, covering
+              software engineering, web technologies, and core computing fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHY ============ -->
+  <section class="philosophy">
+    <div class="section-inner">
+      <p class="philosophy-quote reveal">
+        "I don't just want to use technology. I want to understand it, build with it,
+        and create solutions that matter."
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CODE / GITHUB ============ -->
+  <section class="section section-alt" id="code">
+    <div class="section-inner code-inner">
+      <p class="section-path">~/code</p>
+      <h2 class="section-title">Code. Build. Learn. Repeat.</h2>
+      <p class="code-text">Explore my projects, experiments, and development journey.</p>
+      <a href="https://github.com/YOUR_USERNAME" class="btn btn-primary">
+        GitHub — @YOUR_USERNAME
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="section-path">~/contact</p>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-intro">Have a project, idea, opportunity, or technology challenge? Let's connect.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info reveal">
+          <div class="info-row">
+            <span class="info-label">Email</span>
+            <a href="mailto:collins@example.com">collins@example.com</a>
+          </div>
+          <div class="info-row">
+            <span class="info-label">GitHub</span>
+            <a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a>
+          </div>
+          <div class="info-row">
+            <span class="info-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/YOUR_USERNAME">linkedin.com/in/YOUR_USERNAME</a>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Location</span>
+            <span>Kenya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <span class="nav-logo">collins<span class="dot">.</span></span>
+      <p>Computer Technology Student | Developer | Technologist</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://github.com/YOUR_USERNAME">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME">LinkedIn</a>
+      <a href="mailto:collins@example.com">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Collins. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
